@@ -1,0 +1,37 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+.progress {
+  background-color: @brand-off-white;
+  border-radius: 0;
+//  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  box-shadow: none;
+}
+
+.progress-bar {
+  background-color: @brand-orange;
+  box-shadow: none;
+}
+
+.progress-bar-success {
+  .progress-bar-variant(@brand-lime);
+}
+
+.progress-bar-info {
+  .progress-bar-variant(@brand-info);
+}
+
+.progress-bar-warning {
+  .progress-bar-variant(@progress-bar-warning-bg);
+}
+
+.progress-bar-danger {
+  .progress-bar-variant(@progress-bar-danger-bg);
+}

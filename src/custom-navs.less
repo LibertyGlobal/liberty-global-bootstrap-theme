@@ -1,0 +1,94 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+
+.nav {
+  > li > a {
+    color: @brand-gray-dark;
+
+    &:hover,
+    &:focus {
+      color: @brand-gray-dark;
+      background-color: @brand-gray-lighter;
+    }
+  }
+
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: @brand-gray-medium;
+      border-color: @brand-gray-medium;
+    }
+  }
+}
+
+
+.nav-tabs {
+  border-bottom: 1px solid @brand-gray-light;
+
+  > li {
+    > a {
+      border-radius: 0;
+
+      &:hover {
+        border-color: @brand-gray-lighter @brand-gray-lighter @brand-gray-light;
+      }
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+        border: 1px solid @brand-orange;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+
+.nav-pills {
+  > li {
+    float: left;
+
+    > a {
+      border-radius: 0;
+    }
+
+    + li {
+      margin-left: 2px;
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+      }
+    }
+  }
+}
+
+.nav-stacked {
+  > li {
+    float: none;
+
+    + li {
+      margin-top: 2px;
+      margin-left: 0;
+    }
+  }
+}

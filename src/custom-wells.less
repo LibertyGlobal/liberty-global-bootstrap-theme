@@ -1,0 +1,32 @@
+// Load Bootstrap core variables and mixins]
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+
+.well {
+  background-color: @brand-off-white;
+  border: 1px solid @brand-gray-lighter;
+  border-radius: 0;
+  box-shadow: none;
+
+  blockquote {
+    border-color: @brand-gray-lighter;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+.well-lg {
+  border-radius: 0;
+}
+
+.well-sm {
+  border-radius: 0;
+}

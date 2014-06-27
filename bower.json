@@ -1,0 +1,22 @@
+{
+  "name": "liberty-global-bootstrap-theme",
+  "description": "Liberty Global Theme for Twitter Bootstrap",
+  "version": "0.0.1",
+  "authors": [
+    "J. Snaras <jsnaras@libertyglobal.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": "./dist/liberty-global-bootstrap-theme.min.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}

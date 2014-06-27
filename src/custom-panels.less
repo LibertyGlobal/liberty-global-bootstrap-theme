@@ -1,0 +1,111 @@
+// Load Bootstrap core variables and mixins
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+// Load theme variables
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+.panel {
+  border-radius: 0;
+  box-shadow: none;
+
+  > .list-group + .panel-footer {
+    border-top: 0;
+  }
+}
+
+.panel-heading {
+  border-radius: 0;
+}
+
+.panel-footer {
+  border-radius: 0;
+}
+
+.panel {
+  > .list-group {
+    &:first-child {
+      .list-group-item:first-child {
+        border-radius: 0;
+      }
+    }
+
+    &:last-child {
+      .list-group-item:last-child {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.panel {
+  > .table:first-child,
+  > .table-responsive:first-child > .table:first-child {
+    border-radius: 0;
+
+    > thead:first-child,
+    > tbody:first-child {
+      > tr:first-child {
+        td:first-child,
+        th:first-child {
+          border-radius: 0;
+        }
+
+        td:last-child,
+        th:last-child {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  > .table:last-child,
+  > .table-responsive:last-child > .table:last-child {
+    border-radius: 0;
+
+    > tbody:last-child,
+    > tfoot:last-child {
+      > tr:last-child {
+        td:first-child,
+        th:first-child {
+          border-radius: 0;
+        }
+
+        td:last-child,
+        th:last-child {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.panel-group {
+  .panel {
+    border-radius: 0;
+  }
+}
+
+.panel-default {
+  .panel-variant(@brand-gray-light; @brand-gray-darker; @brand-gray-lighter; @brand-gray-light);
+}
+
+.panel-primary {
+  .panel-variant(@brand-orange; #fff; @brand-orange; @brand-orange);
+}
+
+.panel-success {
+  .panel-variant(@brand-lime; #fff; @brand-lime; @brand-lime);
+}
+
+.panel-info {
+  .panel-variant(@brand-aqua; #fff; @brand-aqua; @brand-aqua);
+}
+
+.panel-warning {
+  .panel-variant(@panel-warning-border; @panel-warning-text; @panel-warning-heading-bg; @panel-warning-border);
+}
+
+.panel-danger {
+  .panel-variant(@panel-danger-border; @panel-danger-text; @panel-danger-heading-bg; @panel-danger-border);
+}

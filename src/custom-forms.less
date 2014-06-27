@@ -1,0 +1,38 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+
+  &:focus {
+    border-color: @brand-gray-dark;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.has-success {
+  .form-control-validation(@brand-lime; @brand-lime; #fff);
+}
+
+.has-warning {
+  .form-control-validation(@brand-orange; @brand-orange; #fff);
+}
+
+.has-error {
+  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+}
+
+.help-block {
+  color: @brand-gray-dark;
+}

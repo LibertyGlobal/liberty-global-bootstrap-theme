@@ -1,0 +1,140 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.navbar {
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-form {
+  box-shadow: none;
+}
+
+.navbar-default {
+  background-color: @brand-gray-lighter;
+
+  .navbar-brand {
+    color: @brand-gray-darker;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: @brand-gray-medium;
+    }
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @brand-gray-darker;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-gray-medium;
+      }
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+      }
+    }
+
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+      }
+    }
+
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-gray-medium;
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: @brand-gray-dark;
+
+  .navbar-brand {
+    color: @brand-off-white;
+
+    &:hover,
+    &:focus {
+      background-color: @brand-gray-medium;
+    }
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @brand-off-white;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-gray-medium;
+      }
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+      }
+    }
+
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-orange;
+      }
+    }
+
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: @brand-gray-medium;
+      }
+    }
+  }
+
+  .form-control {
+    background-color: darken(@brand-gray-dark, 5%);
+    color: @brand-off-white;
+    border-color: @brand-gray-darker;
+
+    .placeholder(@brand-gray-light);
+
+    &:focus {
+      background-color: darken(@brand-gray-dark, 10%);
+    }
+  }
+}

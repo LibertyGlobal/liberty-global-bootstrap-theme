@@ -1,0 +1,22 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.badge {
+  font-weight: normal;
+  background-color: @brand-gray-medium;
+  color: @brand-off-white;
+  border-radius: 0;
+}
+
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: @brand-orange;
+}

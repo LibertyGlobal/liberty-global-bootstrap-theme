@@ -1,0 +1,28 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+
+// Utilities
+
+.v-offset-1 {
+  margin-bottom: 15px;
+}
+
+.v-offset-2 {
+  margin-bottom: 30px;
+}
+
+.table.table-align-vertically > tbody > tr {
+  > th,
+  > td {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,45 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.pager {
+  li {
+
+    > a,
+    > span {
+      display: inline-block;
+      padding: 5px 14px;
+      color: @brand-gray-darker;
+      background-color: #fff;
+      border: 1px solid @brand-gray-light;
+      border-radius: @pager-border-radius;
+    }
+
+    > a:hover,
+    > a:focus {
+      background-color: @brand-off-white;
+      border-color: @brand-gray-medium;
+    }
+  }
+
+
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      color: @brand-gray-medium;
+      background-color: #fff;
+      border-color: @brand-gray-light;
+      cursor: not-allowed;
+    }
+  }
+
+}

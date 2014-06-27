@@ -1,0 +1,66 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid @brand-gray-medium;
+  border-radius: 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+
+  > li > a {
+    color: @brand-gray-darker;
+  }
+}
+
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    color: @brand-gray-darker;
+    background-color: @brand-gray-lighter;
+  }
+}
+
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @brand-gray-darker;
+    text-decoration: none;
+    outline: 0;
+    background-color: @brand-gray-lighter;
+  }
+}
+
+.dropdown-menu > .disabled > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @brand-gray-medium;
+  }
+}
+
+.dropdown-menu > .disabled > a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none; // Remove CSS gradient
+    .reset-filter();
+    cursor: not-allowed;
+  }
+}
+
+.dropdown-header {
+  color: @brand-gray-dark;
+}
+
+

@@ -1,0 +1,84 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.text-muted {
+  color: @brand-gray-medium;
+}
+
+.text-primary {
+  color: @brand-orange;
+
+  a&:hover {
+    color: darken(@brand-orange, 5%);
+  }
+}
+
+.text-success {
+  color: @brand-lime;
+
+  a&:hover {
+    color: darken(@brand-lime, 3%);
+  }
+}
+
+.text-info {
+  color: @brand-aqua;
+
+  a&:hover {
+    color: darken(@brand-aqua, 3%);
+  }
+}
+
+// FIXME
+.text-warning {
+  //
+}
+
+// FIXME
+.text-danger {
+//  .text-emphasis-variant(@state-danger-text);
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: @brand-orange;
+
+  a&:hover {
+    background-color: darken(@brand-orange, 5%);
+  }
+}
+
+.bg-success {
+  color: #fff;
+  background-color: @brand-lime;
+
+  a&:hover {
+    background-color: darken(@brand-lime, 3%);
+  }
+}
+
+.bg-info {
+  color: #fff;
+  background-color: @brand-aqua;
+
+  a&:hover {
+    background-color: darken(@brand-aqua, 3%);
+  }
+}
+
+// FIXME
+.bg-warning {
+//  .bg-variant(@state-warning-bg);
+}
+
+.bg-danger {
+//  .bg-variant(@state-danger-bg);
+}

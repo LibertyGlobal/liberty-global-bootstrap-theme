@@ -1,0 +1,23 @@
+{
+  "name": "liberty-global-bootstrap-theme",
+  "version": "0.0.1",
+  "description": "Liberty Global Theme for Twitter Bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/LibertyGlobal/liberty-global-bootstrap-theme.git"
+  },
+  "author": "J. Snaras <jsnaras@libertyglobal.com>",
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-bump": "^0.1.9",
+    "gulp-clean": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-header": "^1.0.2",
+    "gulp-less": "^1.2.3",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-plumber": "^0.6.3",
+    "gulp-rename": "^1.2.0",
+    "yargs": "^1.2.6"
+  }
+}

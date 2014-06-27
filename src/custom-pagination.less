@@ -1,0 +1,80 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.pagination {
+  border-radius: 0;
+
+  > li {
+    > a,
+    > span {
+      color: @brand-gray-darker;
+      background-color: #fff;
+      border: 1px solid @brand-gray-light;
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+
+    &:last-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      color: @brand-gray-darker;
+      background-color: @brand-off-white;
+      border-color: @brand-gray-medium;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: @brand-orange;
+      border-color: @brand-orange;
+      cursor: default;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: @brand-gray-medium;
+      background-color: #fff;
+      border-color: @brand-gray-light;
+    }
+  }
+}
+
+.pagination-lg {
+  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large);
+}
+
+.pagination-sm {
+  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small);
+}

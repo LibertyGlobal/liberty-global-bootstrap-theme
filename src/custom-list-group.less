@@ -1,0 +1,41 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+.list-group {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid @brand-gray-light;
+
+  &:first-child,
+  &:last-child {
+    border-radius: 0;
+  }
+}
+
+a.list-group-item {
+  &:hover,
+  &:focus {
+    color: @brand-gray-darker;
+    background-color: @brand-off-white;
+  }
+
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: #fff;
+    background-color: @brand-orange;
+    border-color: @brand-orange;
+  }
+}

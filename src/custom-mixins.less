@@ -1,0 +1,110 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+
+.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline  {
+    color: @text-color;
+  }
+
+  .form-control {
+    border-color: @border-color;
+    box-shadow: none;
+
+    &:focus {
+      border-color: darken(@border-color, 10%);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px lighten(@border-color, 20%);
+    }
+  }
+}
+
+
+.button-variant(@color; @background; @background-hover; @border; @border-hover) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: @background-hover;
+    border-color: @border-hover;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+.label-variant(@color) {
+  background-color: @color;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: lighten(@color, 5%);
+    }
+  }
+}
+
+.pagination-size(@padding-vertical; @padding-horizontal; @font-size) {
+  > li {
+    > a,
+    > span {
+      padding: @padding-vertical @padding-horizontal;
+      font-size: @font-size;
+    }
+    &:first-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.progress-bar-variant(@color) {
+  background-color: @color;
+  .progress-striped & {
+    #gradient > .striped();
+  }
+}
