@@ -1,0 +1,10 @@
+.DS_Store*
+ehthumbs.db
+Icon*
+Thumbs.db
+
+*.log
+.idea
+
+node_modules
+bower_components
