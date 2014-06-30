@@ -17,7 +17,7 @@
   color: @brand-orange;
 
   a&:hover {
-    color: darken(@brand-orange, 5%);
+    color: @brand-orange-light;
   }
 }
 
@@ -25,7 +25,7 @@
   color: @brand-lime;
 
   a&:hover {
-    color: darken(@brand-lime, 3%);
+    color: @brand-lime-light;
   }
 }
 
@@ -33,52 +33,67 @@
   color: @brand-aqua;
 
   a&:hover {
-    color: darken(@brand-aqua, 3%);
+    color: @brand-aqua-light;
   }
 }
 
-// FIXME
 .text-warning {
-  //
+  color: @brand-violet;
+
+  a&:hover {
+    color: @brand-violet-light;
+  }
 }
 
-// FIXME
 .text-danger {
-//  .text-emphasis-variant(@state-danger-text);
+  color: @brand-red;
+
+  a&:hover {
+    color: @brand-red-light;
+  }
 }
 
 .bg-primary {
-  color: #fff;
-  background-color: @brand-orange;
+  color: @brand-orange;
+  background-color: @brand-orange-lightest;
 
   a&:hover {
-    background-color: darken(@brand-orange, 5%);
+    background-color: @brand-orange-lightest;
   }
 }
 
 .bg-success {
-  color: #fff;
-  background-color: @brand-lime;
+  color: @brand-lime;
+  background-color: @brand-lime-lightest;
 
   a&:hover {
-    background-color: darken(@brand-lime, 3%);
+    background-color: @brand-lime-lightest;
   }
 }
 
 .bg-info {
-  color: #fff;
-  background-color: @brand-aqua;
+  color: @brand-aqua;
+  background-color: @brand-aqua-lightest;
 
   a&:hover {
-    background-color: darken(@brand-aqua, 3%);
+    background-color: @brand-aqua-lightest;
   }
 }
 
-// FIXME
 .bg-warning {
-//  .bg-variant(@state-warning-bg);
+  color: @brand-violet;
+  background-color: @brand-violet-lightest;
+
+  a&:hover {
+    background-color: @brand-violet-lightest;
+  }
 }
 
 .bg-danger {
-//  .bg-variant(@state-danger-bg);
+  color: @brand-red;
+  background-color: @brand-red-lightest;
+
+  a&:hover {
+    background-color: @brand-red-lightest;
+  }
 }

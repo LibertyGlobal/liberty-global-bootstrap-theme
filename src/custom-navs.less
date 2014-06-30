@@ -13,11 +13,27 @@
 .nav {
   > li > a {
     color: @brand-gray-dark;
+    background-color: @brand-gray-lighter;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: @brand-orange;
 
     &:hover,
     &:focus {
-      color: @brand-gray-dark;
+      color: @brand-gray-darker;
       background-color: @brand-gray-lighter;
+      border-top-color: @brand-gray-lighter;
+    }
+  }
+
+  .disabled > a {
+    background-color: #fff;
+    border-top-color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: @brand-off-white;
+      border-top-color: @brand-off-white;
     }
   }
 
@@ -34,14 +50,16 @@
 
 
 .nav-tabs {
-  border-bottom: 1px solid @brand-gray-light;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid @brand-orange;
 
   > li {
     > a {
       border-radius: 0;
 
       &:hover {
-        border-color: @brand-gray-lighter @brand-gray-lighter @brand-gray-light;
+        border-bottom-color: @brand-orange;
       }
     }
 
@@ -55,6 +73,19 @@
         border-bottom-color: transparent;
       }
     }
+
+    &.disabled > a {
+      color: @brand-gray-medium;
+      background-color: @brand-gray-lighter;
+      border-top-color: @brand-gray-lighter;
+
+      &:hover,
+      &:focus {
+        color: @brand-gray-medium;
+        background-color: @brand-gray-lighter;
+        border-top-color: @brand-gray-lighter;
+      }
+    }
   }
 }
 
@@ -64,6 +95,7 @@
     float: left;
 
     > a {
+      background-color: #fff;
       border-radius: 0;
     }
 

@@ -21,17 +21,274 @@
 
 
 .btn-default {
-  .button-variant(@brand-gray-darker; #fff; @brand-off-white; @brand-gray-light; @brand-gray-medium);
+  color: @brand-gray-darker;
+  background-color: #fff;
+  border-color: @brand-gray-light;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @brand-gray-darker;
+    background-color: @brand-off-white;
+    border-color: @brand-gray-medium;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: #fff;
+      border-color: @brand-gray-light;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-gray-darker;
+  }
 }
 
 .btn-primary {
-  .button-variant(#fff; @brand-orange; lighten(@brand-orange, 5%); @brand-orange; @brand-orange);
-}
+  color: #fff;
+  background-color: @brand-orange;
+  border-color: @brand-orange;
 
-.btn-success {
-  .button-variant(#fff; @brand-lime; lighten(@brand-lime, 5%); @brand-lime; @brand-lime);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: @brand-orange-light;
+    border-color: @brand-orange-light;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @brand-orange-lighter;
+      border-color: @brand-orange-lighter;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-orange;
+  }
 }
 
 .btn-info {
-  .button-variant(#fff; @brand-aqua; lighten(@brand-aqua, 5%); @brand-aqua; @brand-aqua);
+  color: #fff;
+  background-color: @brand-aqua;
+  border-color: @brand-aqua;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: @brand-aqua-light;
+    border-color: @brand-aqua-light;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @brand-aqua-lighter;
+      border-color: @brand-aqua-lighter;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-aqua;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  background-color: @brand-lime;
+  border-color: @brand-lime;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: @brand-lime-light;
+    border-color: @brand-lime-light;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @brand-lime-lighter;
+      border-color: @brand-lime-lighter;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-lime;
+  }
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: @brand-violet;
+  border-color: @brand-violet;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: @brand-violet-light;
+    border-color: @brand-violet-light;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @brand-violet-lighter;
+      border-color: @brand-violet-lighter;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-violet;
+  }
+}
+
+
+.btn-danger {
+  color: #fff;
+  background-color: @brand-red;
+  border-color: @brand-red;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: @brand-red-light;
+    border-color: @brand-red-light;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @brand-red-lighter;
+      border-color: @brand-red-lighter;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @brand-red;
+  }
+}
+
+.btn-link {
+  color: @brand-orange;
+
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+  }
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-orange-light;
+    border-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @brand-orange-lighter;
+      text-decoration: none;
+    }
+  }
 }

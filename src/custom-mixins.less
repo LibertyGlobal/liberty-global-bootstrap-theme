@@ -102,6 +102,20 @@
   }
 }
 
+.alert-variant(@background; @border; @text-color) {
+  background-color: @background;
+  border-color: @border;
+  color: @text-color;
+
+  hr {
+    border-top-color: @border;
+  }
+
+  .alert-link {
+    color: @brand-gray-darker;
+  }
+}
+
 .progress-bar-variant(@color) {
   background-color: @color;
   .progress-striped & {

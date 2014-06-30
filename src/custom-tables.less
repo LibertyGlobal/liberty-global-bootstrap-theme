@@ -1,0 +1,235 @@
+// Load Bootstrap core variables and mixins
+
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+
+// Load theme variables
+
+@import "custom-variables.less";
+@import "custom-mixins.less";
+
+
+table {
+  background-color: #fff;
+}
+
+
+.table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top: 1px solid @brand-gray-light;
+      }
+    }
+  }
+
+  > thead > tr > th {
+    border-bottom: 2px solid @brand-gray-light;
+  }
+
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+
+  > tbody + tbody {
+    border-top: 2px solid @brand-gray-light;
+  }
+
+  .table {
+    background-color: #fff;
+  }
+}
+
+.table-bordered {
+  border: 1px solid @brand-gray-light;
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid @brand-gray-light;
+      }
+    }
+  }
+
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: @brand-off-white;
+    }
+  }
+}
+
+
+.table-hover {
+  > tbody > tr:hover {
+    > td,
+    > th {
+      background-color: @brand-off-white;
+    }
+  }
+}
+
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.active,
+  > th.active,
+  &.active > td,
+  &.active > th {
+    background-color: @brand-off-white;
+  }
+}
+
+.table-hover > tbody > tr {
+  > td.active:hover,
+  > th.active:hover,
+  &.active:hover > td,
+  &.active:hover > th {
+    background-color: @brand-gray-lighter;
+  }
+}
+
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.success,
+  > th.success,
+  &.success > td,
+  &.success > th {
+    background-color: @brand-lime-lightest;
+  }
+}
+
+.table-hover > tbody > tr {
+  > td.success:hover,
+  > th.success:hover,
+  &.success:hover > td,
+  &.success:hover > th {
+    background-color: @brand-lime-lighter;
+  }
+}
+
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.info,
+  > th.info,
+  &.info > td,
+  &.info > th {
+    background-color: @brand-aqua-lightest;
+  }
+}
+
+.table-hover > tbody > tr {
+  > td.info:hover,
+  > th.info:hover,
+  &.info:hover > td,
+  &.info:hover > th {
+    background-color: @brand-aqua-lighter;
+  }
+}
+
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.warning,
+  > th.warning,
+  &.warning > td,
+  &.warning > th {
+    background-color: @brand-violet-lightest;
+  }
+}
+
+.table-hover > tbody > tr {
+  > td.warning:hover,
+  > th.warning:hover,
+  &.warning:hover > td,
+  &.warning:hover > th {
+    background-color: @brand-violet-lighter;
+  }
+}
+
+
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  > td.danger,
+  > th.danger,
+  &.danger > td,
+  &.danger > th {
+    background-color: @brand-red-lightest;
+  }
+}
+
+.table-hover > tbody > tr {
+  > td.danger:hover,
+  > th.danger:hover,
+  &.danger:hover > td,
+  &.danger:hover > th {
+    background-color: @brand-red-lighter;
+  }
+}
+
+
+@media (max-width: @screen-xs-max) {
+  .table-responsive {
+    border: 1px solid @brand-gray-light;
+
+    > .table-bordered {
+      border: 0;
+
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th:first-child,
+          > td:first-child {
+            border-left: 0;
+          }
+          > th:last-child,
+          > td:last-child {
+            border-right: 0;
+          }
+        }
+      }
+
+      > tbody,
+      > tfoot {
+        > tr:last-child {
+          > th,
+          > td {
+            border-bottom: 0;
+          }
+        }
+      }
+
+    }
+  }
+}
