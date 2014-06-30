@@ -1,6 +1,6 @@
 /**
  * Liberty Global Theme for Twitter Bootstrap
- * @version v0.1.0
+ * @version v0.2.0
  */
 a {
   color: #004fa0;
@@ -52,6 +52,31 @@ a.bg-success:hover {
 }
 a.bg-info:hover {
   background-color: #38bacd;
+}
+code {
+  color: #6f6b6c;
+  background-color: #f9f9f9;
+  border-radius: 0;
+}
+kbd {
+  color: #6f6b6c;
+  background-color: #f9f9f9;
+  border-radius: 0;
+  box-shadow: none;
+}
+pre {
+  color: #444444;
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
 }
 .form-control {
   border-radius: 0;
